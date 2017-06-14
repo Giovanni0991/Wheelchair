@@ -24,7 +24,7 @@ link_directories(${GAZEBO_LIBRARY_DIRS})
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 
 add_executable(read_pos_ag src/read_pos_ag.cpp)
-add_executable(read_imu src/read_imu.cpp)
+add_executable(read_sensors src/read_sensors.cpp)
 
 target_link_libraries(read_pos_ag ${catkin_LIBRARIES})
-target_link_libraries(read_imu ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+target_link_libraries(read_sensors ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})

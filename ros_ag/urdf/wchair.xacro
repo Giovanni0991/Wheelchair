@@ -13,6 +13,9 @@
 
 	<property name="hokuyo_size" value="0.05"/>
 	<property name="imu_size" value="0.05"/>
+	
+	<property name="rate_sensor" value="1.0"/>
+	
 <!-- ##################################################################### -->
 	<!-- Base Link -->
 	<link name="base_link">
@@ -214,7 +217,7 @@
 		<sensor type="ray" name="head_hokuyo_sensor">
 			<pose>${hokuyo_size/2} 0 0 0 0 0</pose>
 			<visualize>false</visualize>
-			<update_rate>50.0</update_rate>
+			<update_rate>${rate_sensor}</update_rate>
 			<ray>
 				<scan>
 					<horizontal>
@@ -310,7 +313,7 @@
           </linear_acceleration>
         </imu>
 			<pose>0 0 0 0 0 0</pose>
-			<update_rate>50.0</update_rate>
+			<update_rate>${rate_sensor}</update_rate>
     		<plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so"> 
     	  		<topicName>/imu</topicName>
     	  		<frameName>imu_link</frameName>
