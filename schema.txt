@@ -1,0 +1,51 @@
+###################################################################################################################
+Node					|	Topic								|	Modalità	|	Licenza		|	Pkg
+###################################################################################################################
+automatic.cpp			|	/cmd_vel							|	subscriber	|	univpm		|	automatic	
+ 	--					|	/AUTO								|	publisher	|	univpm		|		--		
+comando.cpp				|	/imu/data							|	subscriber	|	univpm		|	comando		
+	--					|	/AUTO								|	subscriber	|	univpm		|		--
+	--					|	/DIR								|	publisher	|	univpm		|		--
+encoder.cpp				|	/encoder_D							|	subscriber	|	univpm		|	encoder
+	--					|	/encoder_S							|	subscriber	|	univpm		|		--
+	--					|	/estimated_odom_pose/Pose			|	publisher	|	univpm		|		--
+encoder_imu.cpp			|	/encoder_D							|	subscriber	|	univpm		|	encoder_imu
+	--					|	/encoder_S							|	subscriber	|	univpm		|		--
+	--					|	/DIR								|	subscriber	|	univpm		|		--
+	--					|	/imu/data							|	subscriber	|	univpm		|		--
+	--					|	/estimated_imu_odom_pose/Pose		|	publisher	|	univpm		|		--
+rtest.cpp				|	/map_metadata						|	subscriber	|	Copyright	|	gmapping
+slam_gmapping.cpp		|	/map								|	publisher	|	Copyright	|		--
+	--					|	/map_metadata						|	publisher	|	Copyright	|		--
+	--					|	/dynamic_map						|	publisher	|	Copyright	|		--
+	--					|	/scan								| 	subscriber	|	Copyright	|		--
+tftest.cpp				|	/base_scan							|	subscriber	|	Copyright	|		--
+goal_setting.cpp		|	/move_base_simple/goal				|	publisher	|	univpm		|	goal_setting
+	--					|	/GOAL								|	subscriber	|	univpm		|		--
+hokuyo_node.cpp			|	/scan								|	publisher	|	Copyright	|	hokuyo_node
+evaluate_pose_imu.cpp	|	/DIR								|	subscriber	|	univpm		|	imu_to_pose
+	--					|	/qr_localization/Pose				|	subscriber	|	univpm		|		--
+	--					|	/imu/data							|	subscriber	|	univpm		|		--
+	--					|	/estimated_imu_pose/Pose			|	publisher	|	univpm		|		--
+obstacle.cpp			|	/scan								|	subscriber	|	univpm		|	obstacle
+obstacle.cpp			|	/cmd_vel							|	publisher	|	univpm		|		--
+pf.cpp					|	/DIR								|	subscriber	|	univpm		|	pf
+	--					|	/encoder_D							|	subscriber	|	univpm		|		--
+	--					|	/encoder_S							|	subscriber	|	univpm		|		--
+	--					|	/imu/data							|	subscriber	|	univpm		|		--
+	--					|	/estimated_imu_pose/Pose			|	publisher	|	univpm		|		--
+evaluate_pose.cpp		|	/visp_auto_tracker/object_position	|	subscriber	|	univpm		|	qr_localization
+	--					|	/visp_auto_tracker/qrinfo			|	subscriber	|	univpm		|		--
+	--					|	/qr_localization/Pose				|	publisher	|	univpm		|		--
+	--					|	/initialpose						|	publisher	|	univpm		|		--
+	--					|	/imu/data							|	subscriber	|	univpm		|		--
+ukf.cpp					|	/DIR								|	subscriber	|	univpm		|	ukf	
+	--					|	/encoder_D							|	subscriber	|	univpm		|		--
+	--					|	/encoder_S							|	subscriber	|	univpm		|		--
+	--					|	/initialpose						|	subscriber	|	univpm		|		--
+	--					|	/imu/data							|	subscriber	|	univpm		|		--
+	--					|	/estimated_imu_pose/Pose			|	publisher	|	univpm		|		--
+	--					|	/odom								|	publisher	|	univpm		|		--
+###################################################################################################################
+
+	
